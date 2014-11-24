@@ -92,7 +92,7 @@ final class BookResultInfoRetriever extends SupplementalInfoRetriever {
       throw new IOException(e);
     }
 
-    Collection<String> newTexts = new ArrayList<>();
+    Collection<String> newTexts = new ArrayList<String>();
     maybeAddText(title, newTexts);
     maybeAddTextSeries(authors, newTexts);
     maybeAddText(pages == null || pages.isEmpty() ? null : pages + "pp.", newTexts);
